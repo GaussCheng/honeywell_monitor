@@ -2,6 +2,10 @@ TARGET = QModBus
 TEMPLATE = app
 VERSION = 0.1.0
 
+greaterThan(QT_MAJOR_VERSION, 4){
+QT += widgets
+}
+
 MOC_DIR     = generated
 OBJECTS_DIR = generated
 UI_DIR      = generated
@@ -45,7 +49,7 @@ win32 {
     SOURCES += 3rdparty/qextserialport/win_qextserialport.cpp \
            3rdparty/qextserialport/qextserialenumerator_win.cpp
     DEFINES += _TTY_WIN_  WINVER=0x0501
-    LIBS += -lsetupapi -lwsock32
+    LIBS += -lsetupapi -lwsock32 -lWS2_32
 }
 
 FORMS += forms/mainwindow.ui \

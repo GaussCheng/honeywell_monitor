@@ -24,8 +24,8 @@
 
 #include <QtCore/QDebug>
 #include <QtCore/QDateTime>
-#include <QtGui/QFileDialog>
-#include <QtGui/QMessageBox>
+#include <QFileDialog>
+#include <QMessageBox>
 
 #include <errno.h>
 

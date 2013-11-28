@@ -1,5 +1,6 @@
 <RCC>
-    <qresource prefix="/images" >
-        <file>logo.png</file>
+    <qresource prefix="/images">
+        <file>monitor1.png</file>
+        <file>monitor2.png</file>
     </qresource>
 </RCC>

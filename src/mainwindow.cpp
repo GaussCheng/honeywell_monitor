@@ -25,8 +25,8 @@
 #include <QtCore/QSettings>
 #include <QtCore/QDebug>
 #include <QtCore/QTimer>
-#include <QtGui/QMessageBox>
-#include <QtGui/QScrollBar>
+#include <QMessageBox>
+#include <QScrollBar>
 
 #include <errno.h>
 
@@ -92,9 +92,6 @@ MainWindow::MainWindow( QWidget * _parent ) :
 	m_statusInd = new QWidget;
 	m_statusInd->setFixedSize( 16, 16 );
 	m_statusText = new QLabel;
-	ui->statusBar->addWidget( m_statusInd );
-	ui->statusBar->addWidget( m_statusText, 10 );
-	resetStatus();
 
 	QTimer * t = new QTimer( this );
 	connect( t, SIGNAL(timeout()), this, SLOT(pollForDataOnBus()));

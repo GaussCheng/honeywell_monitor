@@ -69,7 +69,7 @@ void SerialSettingsWidget::changeModbusInterface(const QString& port, char parit
 {
 	releaseSerialModbus();
 
-	m_serialModbus = modbus_new_rtu( port.toAscii().constData(),
+    m_serialModbus = modbus_new_rtu( port.toLatin1().constData(),
 			ui->baud->currentText().toInt(),
 			parity,
 			ui->dataBits->currentText().toInt(),

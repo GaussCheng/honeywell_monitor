@@ -27,7 +27,7 @@
 
 #include <QtCore/QFile>
 #include <QtCore/QTimer>
-#include <QtGui/QDialog>
+#include <QDialog>
 
 #include "modbus.h"
 

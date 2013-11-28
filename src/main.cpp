@@ -23,7 +23,8 @@
  */
 
 
-#include <QtGui/QApplication>
+//#include <QtGui/QApplication>
+#include <QApplication>
 #include "mainwindow.h"
 
 MainWindow * globalMainWin = NULL;
