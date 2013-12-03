@@ -82,6 +82,8 @@ private slots:
 
     void on_debugButton_clicked();
 
+    void on_monitorButton_clicked();
+
 private:
     Ui::MainWindowClass * ui;
     modbus_t * m_modbus;

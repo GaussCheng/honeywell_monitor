@@ -533,3 +533,8 @@ void MainWindow::on_debugButton_clicked()
 {
     ui->pageStack->setCurrentIndex(1);
 }
+
+void MainWindow::on_monitorButton_clicked()
+{
+    ui->pageStack->setCurrentIndex(0);
+}
