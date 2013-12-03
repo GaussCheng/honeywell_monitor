@@ -528,3 +528,8 @@ void busMonitorRawData( uint8_t * data, uint8_t dataLen, uint8_t addNewline )
 }
 
 }
+
+void MainWindow::on_debugButton_clicked()
+{
+    ui->pageStack->setCurrentIndex(1);
+}

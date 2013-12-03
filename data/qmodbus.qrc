@@ -2,5 +2,6 @@
     <qresource prefix="/images">
         <file>monitor1.png</file>
         <file>monitor2.png</file>
+        <file>monitor3.png</file>
     </qresource>
 </RCC>

@@ -80,6 +80,8 @@ private slots:
     void onSerialPortActive(bool active);
     void onTcpPortActive(bool active);
 
+    void on_debugButton_clicked();
+
 private:
     Ui::MainWindowClass * ui;
     modbus_t * m_modbus;
